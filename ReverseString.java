@@ -1,22 +1,22 @@
-package Reverse;
-import java.util.Scanner;
+package Assignment;
+
 public class ReverseString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String name;
-		Scanner sc=new Scanner(System.in);
-		name=sc.next();
-		int length=name.length();
-		System.out.println(length);
-		String newname=" ";
-		for(int i=length-1; i>=0; i--)
-		{
-			char value=name.charAt(i);
-			newname=newname+value;
+		int i;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the size of array");
+		int n=s.nextInt();
+		int[] array=new int[n];
+		System.out.println("Element of the array......");
+		for(i=0;i<n;i++) {
+			array[i]=s.nextInt();
 		}
-		System.out.println(newname);
-		
+		System.out.println("Reverse of the array.......");
+		for(i=n-1; i>=0;i--) {
+			System.out.print(array[i]+" ");
+
 	}
 
 }
